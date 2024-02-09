@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="home.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/home.js"></script>
     <title>Document</title>
 </head>
 
@@ -41,7 +41,7 @@
             </p>
             <div id="buttonsLeft">
                 <button id="button1Left">Matricule-se</button>
-                <button id="button2Left">Agende uma Visita</button>
+                <button id="button2Left">Excluir Matricula</button>
             </div>
         </div>
         <div id="divRight">
@@ -51,26 +51,22 @@
 
     <div id="div_matricula">
         <p>Matricule-se</p>
-        <form action="/matricular" method="post" id="form_mat">
-            <input type="text" placeholder="Nome Completo" name="nome">
-            <input type="text" placeholder="CPF" name="cpf">
-            <input type="text" placeholder="Data de Nascimento" name="dt">
-            <input type="email" placeholder="Email Principal" name="email">
-            <input type="tel" placeholder="Telefone ou celular" name="telefone">
+        <form action="/criar" method="POST" id="form_mat">
+            <input type="text" placeholder="Nome Completo" name="nome_m">
+            <input type="text" placeholder="CPF" name="cpf_m">
+            <input type="text" placeholder="Data de Nascimento" name="dn_m">
+            <input type="email" placeholder="Email Principal" name="email_m">
+            <input type="tel" placeholder="Telefone ou celular" name="telefone_m">
             <input id="btn_sub_mat" type="submit" value="Matricular">
         </form>
         <button id="btn_sair_matricula">Sair</button>
     </div>
 
     <div id="div_agendamento">
-        <p>Agende uma visita</p>
-        <form action="" method="">
-            <input type="text" placeholder="Nome Completo">
-            <input type="text" placeholder="CPF">
-            <input type="email" placeholder="Email Principal">
-            <input type="tel" placeholder="Telefone ou celular">
-            <input type="datetime" placeholder="Data">
-            <input id="btn_conf_agen" type="submit" value="Agendar">
+        <p>Excluir Matricula</p>
+        <form action="/excluir" method="POST">
+            <input type="number" placeholder="Insira o ID" name="id_e">
+            <input id="btn_conf_agen" type="submit" value="Excluir Matricula">
         </form>
         <button id="btn_sair_agendamento">Sair</button>
     </div>

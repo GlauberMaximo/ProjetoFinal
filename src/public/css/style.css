@@ -154,7 +154,7 @@ section{
 /*    COMEÇO DA MATRICULA    */
 #div_matricula {
     border: 1px solid black;
-    background-color: aqua;
+    background-color: white;
     z-index: 9999;
     position: fixed;
     display: flex;
@@ -171,6 +171,7 @@ section{
     padding-inline: 20px;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 
 #div_matricula form{
@@ -188,6 +189,12 @@ section{
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid black;
+    padding: 10px;
+}
+
+#div_matricula p{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 #btn_sair_matricula{
@@ -203,12 +210,111 @@ section{
 }
 
 #btn_sair_matricula:hover {
-    width: 90%;
-    height: 50px;
-    font-size: 20px;
+    width: 55%;
+    height: 30px;
+    font-size: 18px;
     cursor: pointer;
     transition: 1s;
 }
 
+#div_matricula #btn_sub_mat{
+    background-color: #07084e;
+    border-radius: 30px;
+    margin-top: 5px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#div_matricula #btn_sub_mat:hover{
+    width: 105%;
+    font-size: 18px;
+}
 
 /*    FIM DA MATRICULA    */
+
+/*    COMEÇO DO AGENDAMENTO    */
+#div_agendamento {
+    border: 1px solid black;
+    background-color: white;
+    z-index: 9999;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: none;
+    text-align: center;
+    border-radius: 20px;
+    padding-block: 30px;
+    padding-inline: 20px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#div_agendamento form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_agendamento form input{
+    border: none;
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#div_agendamento p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#btn_sair_agendamento{
+    background-color: rgb(253, 244, 229);
+    border: 1px solid red;
+    border-radius: 30px;
+    width: 50%;
+    height: 30px;
+    margin-top: 5px;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#btn_sair_agendamento:hover {
+    width: 55%;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#div_agendamento #btn_conf_agen{
+    background-color: #07084e;
+    border-radius: 30px;
+    margin-top: 5px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#div_agendamento #btn_conf_agen:hover{
+    width: 105%;
+    font-size: 18px;
+}
+
+/*    FIM DO AGENDAMENTO    */
